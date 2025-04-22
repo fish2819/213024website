@@ -32,6 +32,7 @@
 	float: left;
 	height: 600px;
 	width: 1000px;
+	overflow: auto;
 }
 #item {
 	float: right;
@@ -49,28 +50,60 @@
 	width: 1280px;
 }
 </style>
-<link href="../SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css">
-<script src="../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css">
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
 </head>
 
 <body>
 <div id="container">
   <div id="header"><img src="images/FOOD - 3.jpg" width="1280" height="150"></div>
-  <div id="article"> id "article" 的內容放在這裡</div>
-  <div id="item">
+  <div id="article">
+    <table width="1003" height="555" border="1">
+    <tr>
+      <td height="175"><table width="1003" height="555" border="1">
+        <tr>
+          <td height="34" colspan="2"><p class="titlestyle">嘉義火雞肉飯</p></td>
+        </tr>
+        <tr>
+          <td width="814" height="125"><p>嘉義火雞肉飯各家特色不同，多採用扎實有彈性的火雞胸肉撕成絲或切片、切丁鋪放在飽滿帶有光澤的米飯上，融合獨家特調醬汁，通常以銅板價格就能享有飽足又美味的一碗。吃一口，滋味濃郁、滿口溢香！</p>
+            <p>資料來源:嘉義市觀光旅遊網</p></td>
+          <td width="173"><img src="images/d2401206.jpg" width="176" height="121"></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="初八麵食堂">初八麵食堂</td>
+        </tr>
+        <tr>
+          <td height="118"><p>初八麵食堂以家為出發點，將每位進門的客人，都當做家人般對待，也讓客人來到初八有回到家的味道，因此相當重視食材的新鮮與食物的美味，希望以親切的服務和美味的料理，讓每位顧客來到初八都能回味無窮。推薦的豚燒肉採用濃五花肉，即腹脅肉，其油花分佈均勻，也是最好吃的位置。耗時三小時滷製，等待滷汁全部入味，待涼再做炙燒的動作。作法耗時費工，搭配上御守泡菜和手工熬煮的洛神花茶，嘗起來滋味一絕。</p>
+            <p>資料來源:嘉義市觀光旅遊網</p></td>
+          <td><img src="images/2023-10-20.jpg" width="179" height="106"></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="樂寧漢堡">樂寧漢堡</td>
+        </tr>
+        <tr>
+          <td height="175"><p>成立於嘉義的樂檸漢堡是臺灣難得的美式漢堡速食連鎖品牌，引領全臺「快速慢食 Fast Casual 」的風潮。店內使用新鮮、真實與多樣自製經典食材，讓漢堡不只美味，更滿足營養均衡。推薦的「流金大俠牛堡」使用加入臺灣小麥與自培酵母所製成層次紮實、Q彈有嚼勁的老麵堡包，底層搭配吃得到果肉的果香特製流金醬汁，清爽而不膩口，搭配非格子籠雞蛋煎製而成的半熟太陽蛋，一口咬下，金黃色的流金蛋汁隨之順下，是一款營養又兼具視覺效果的招牌餐點。</p>
+            <p>資料來源:嘉義市觀光旅遊網</p>
+            <p>&nbsp;</p></td>
+          <td><img src="images/1617525675-754669744-g.jpg" width="175" height="162"></td>
+        </tr>
+      </table>        <p>&nbsp;</p></td>
+    </tr>
+    </table>
+  </div>
+  <div id="item"> 
     <ul id="MenuBar1" class="MenuBarVertical">
-      <li><a href="food.html">食分有料</a>      </li>
-      <li><a href="home.html">住宿</a></li>
-      <li><a href="car.html">交通</a></li>
-      <li><a href="confact.html">與我聯絡</a></li>
       <li><a href="aboutme.html">關於我</a></li>
+      <li><a href="food.html">食分有料</a></li>
       <li><a href="index.html">回首頁</a></li>
+      <li><a href="homr.html">住宿</a>      </li>
+      <li><a href="callme.html">與我聯絡</a></li>
+      <li><a href="car.html">交通指南</a></li>
     </ul>
   </div>
   <div id="footer"><img src="images/under.jpg" width="1280" height="50"></div>
 </div>
 <script type="text/javascript">
-var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"});
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
 </script>
 </body>
 </html>
