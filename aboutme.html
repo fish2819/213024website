@@ -51,13 +51,51 @@
 }
 </style>
 <link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css">
+<link href="SpryAssets/SpryAccordion.css" rel="stylesheet" type="text/css">
 <script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryAccordion.js" type="text/javascript"></script>
 </head>
 
 <body>
 <div id="container">
   <div id="header"><img src="images/me - 2.jpg" width="1280" height="150"></div>
   <div id="article">
+    <div id="Accordion1" class="Accordion" tabindex="0">
+      <div class="AccordionPanel">
+        <div class="AccordionPanelTab">基本資料</div>
+        <div class="AccordionPanelContent">
+          <table width="1000" height="181" border="1">
+            <tr>
+              <td colspan="2"><center><img src="images/Screenshot_20241010_005042_Discord.jpg" width="300" height="493"></center></td>
+               
+            </tr>     
+            <tr class="titlestyle">
+              <td width="493" bgcolor="#CCCCCC">個人資料</td>
+              <td width="491" bgcolor="#CCCCCC">學經歷</td>
+            </tr>
+            <tr>
+              <td><p>姓名:黃柏翔</p>
+              <p>性別:男</p>
+              <p>e-mail:11213024@gm.hnvs.cy.edu.tw</p>
+              <p>興趣:畫畫</p></td>
+              <td><p>僑平國小</p>
+              <p>玉山國中</p>
+              <p>華南高商</p>
+              <p>幹部:高二衛生股長</p>
+              <p>社團:健走社</p></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="AccordionPanel">
+        <div class="AccordionPanelTab">設計理念</div>
+        <div class="AccordionPanelContent">畫面乾淨整潔,圖示簡單易懂,使用者能夠方便瀏覽也宣傳了嘉義的美食及文化.</div>
+      </div>
+      <div class="AccordionPanel">
+        <div class="AccordionPanelTab">學習反思</div>
+        <div class="AccordionPanelContent">雖然每個禮拜只有兩節課而已,但每次上課都能學到很多,讓我做網頁的技術越來越好.</div>
+      </div>
+    </div>
     
   </div>
   <div id="item"> 
@@ -74,6 +112,7 @@
 </div>
 <script type="text/javascript">
 var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+var Accordion1 = new Spry.Widget.Accordion("Accordion1");
 </script>
 </body>
 </html>
